@@ -11,38 +11,39 @@ são três tabelas usadas no projeto
 
 ### Foi utilizado a ORM EF core Sqlite para fazer as migrations e utilizar o banco de dados relacional.
 
-Para as consultas do criminalCode seria necessario o User (Usuario) estar cadastrado no banco de dados e a ID do CriminalCode
-para garantir que o usuario está cadastrado no controller do criminalCode vai passar pela autentificação Bearer Token do User
-a authentificação é feita antes dos processos de qualquer tipo de consulta (Deleted, list, Update, Create)
+Para as consultas do criminalCode seria necessario o User (Usuario) estar cadastrado no banco de dados <br/> 
+e também vai ser necessario a ID do CriminalCode para garantir que o usuario está cadastrado no controller <br/> 
+do criminalCode vai passar pela autentificação Bearer Token do User a authentificação é feita antes dos processos <br/> 
+de qualquer tipo de consulta (Deleted, list, Update, Create)
 
 No Response então vai trazer toda informação necessaria para aquela determinada requisição
 
 Deleted 
 
 -> 
-{
-"Message": "Criminal Code deleted is successfully",
-  "Criminal code": 
-  {
-  "id": "id",
-  "name": "name"
-  }
-}
+{ <br/>
+"Message": "Criminal Code deleted is successfully", <br/>
+  "Criminal code": <br/>
+  { <br/>
+  "id": "id", <br/>
+  "name": "name" <br/>
+  } <br/>
+} <br/>
 
-Updated
+Updated <br/>
 
-{
-"Message": "Criminal Code has updated",
+{ <br/>
+"Message": "Criminal Code has updated", <br/>
   "Criminal Code": <br/>
   { <br/>
   "id": "id", <br/>
   "name": "Jose Do laudo", <br/>
-  "Description": "Lei  para ...",
-  "Penalty": 100,
-  "StatusId": 20,
-  "UpdatedUserId": UserAutentificado
-  "Created_at": dataTime utc,
-  "Updated_at": DataTime NOW()
-  }
-}
+  "Description": "Lei  para ...", <br/>
+  "Penalty": 100, <br/>
+  "StatusId": 20, <br/>
+  "UpdatedUserId": UserAutentificado <br/>
+  "Created_at": dataTime utc, <br/>
+  "Updated_at": DataTime NOW() <br/>
+  } <br/>
+}<br/>
 
