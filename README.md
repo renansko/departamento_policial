@@ -18,7 +18,9 @@ de qualquer tipo de consulta (Deleted, list, Update, Create)
 
 No Response então vai trazer toda informação necessaria para aquela determinada requisição
 
-Deleted 
+# Exemplos de retorno
+
+### Deleted 
 
 -> 
 { <br/>
@@ -30,7 +32,7 @@ Deleted
   } <br/>
 } <br/>
 
-Updated <br/>
+### Updated <br/>
 
 { <br/>
 "Message": "Criminal Code has updated", <br/>
