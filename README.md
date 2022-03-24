@@ -34,15 +34,15 @@ Updated
 {
 "Message": "Criminal Code has updated",
   "Criminal Code":
-  -{
-  -"id": "id",
-  -"name": "Jose Do laudo",
-  -"Description": "Lei  para ...",
-  -"Penalty": 100,
-  -"StatusId": 20,
-  -"UpdatedUserId": UserAutentificado
-  -"Created_at": dataTime utc,
-  -"Updated_at": DataTime NOW()
+  {
+  "id": "id",
+  "name": "Jose Do laudo",
+  "Description": "Lei  para ...",
+  "Penalty": 100,
+  "StatusId": 20,
+  "UpdatedUserId": UserAutentificado
+  "Created_at": dataTime utc,
+  "Updated_at": DataTime NOW()
   }
 }
 
